@@ -1,0 +1,122 @@
+[
+    {
+        "title": "New 2025 Compass Latitude",
+        "apr": "4.9",
+        "lease_price": "385",
+        "finance_price": "583",
+        "buy_price": "41879",
+        "car_image": "https://vehicle-images.dealerinspire.com/e1cf-110012223/thumbnails/large/3C4NJDBN1ST526422/80ca4bb807b775b3a9d98d3dcafab91f.jpg",
+        "details": [
+            {
+                "label": "Lease for",
+                "price": "385",
+                "term": "39 mos w/$2,999 down Plus 1st payment, taxes, Fees & doc"
+            },
+            {
+                "label": "Finance for",
+                "price": "583",
+                "term": "72 mos w/$8,375 down"
+            },
+            {
+                "label": "Total Savings",
+                "price": "12111",
+                "term": ""
+            },
+            {
+                "label": "Buy for",
+                "price": "41879",
+                "term": ""
+            }
+        ]
+    },
+    {
+        "title": "New 2025 Grand Cherokee",
+        "apr": "5.1",
+        "lease_price": "399",
+        "finance_price": "599",
+        "buy_price": "45999",
+        "car_image": "https://vehicle-images.dealerinspire.com/3dd3-110012223/thumbnails/large/3C4NJDCN9ST531477/1f6e8c6f5a3173ce45b7d952639a7248.jpg",
+        "details": [
+            {
+                "label": "Lease for",
+                "price": "399",
+                "term": "39 mos w/$3,999 down Plus 1st payment, taxes, Fees & doc"
+            },
+            {
+                "label": "Finance for",
+                "price": "599",
+                "term": "72 mos w/$8,999 down"
+            },
+            {
+                "label": "Total Savings",
+                "price": "14000",
+                "term": ""
+            },
+            {
+                "label": "Buy for",
+                "price": "45999",
+                "term": ""
+            }
+        ]
+    },
+    {
+        "title": "New 2025 Wrangler",
+        "apr": "5.2",
+        "lease_price": "450",
+        "finance_price": "620",
+        "buy_price": "48999",
+        "car_image": "https://vehicle-images.dealerinspire.com/ecdd-110012223/thumbnails/large/1C4RJKAG4S8641491/571ca5b08dd3c6e34200cb9c102339e2.jpg",
+        "details": [
+            {
+                "label": "Lease for",
+                "price": "450",
+                "term": "36 mos w/$3,000 down Plus 1st payment, taxes, Fees & doc"
+            },
+            {
+                "label": "Finance for",
+                "price": "620",
+                "term": "72 mos w/$10,000 down"
+            },
+            {
+                "label": "Total Savings",
+                "price": "15000",
+                "term": ""
+            },
+            {
+                "label": "Buy for",
+                "price": "48999",
+                "term": ""
+            }
+        ]
+    },
+    {
+        "title": "New 2025 RAM 3500 Tradesman",
+        "apr": "5.4",
+        "lease_price": "598",
+        "finance_price": "837",
+        "buy_price": "72245",
+        "car_image": "https://vehicle-images.dealerinspire.com/5fed-110012223/thumbnails/large/1C4RJHAG4SC287973/f386d829654a124542816ff1060b68f1.jpg",
+        "details": [
+            {
+                "label": "Lease for",
+                "price": "598",
+                "term": "39 mos w/$4,999 down Plus 1st payment, taxes, Fees & doc"
+            },
+            {
+                "label": "Finance for",
+                "price": "837",
+                "term": "72 mos w/$9,999 down"
+            },
+            {
+                "label": "Total Savings",
+                "price": "20823",
+                "term": ""
+            },
+            {
+                "label": "Buy for",
+                "price": "72245",
+                "term": ""
+            }
+        ]
+    }
+]
