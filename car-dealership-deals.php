@@ -2,7 +2,7 @@
 /*
 Plugin Name: Car Dealership Deals Display
 Description: Displays ongoing car dealership deals dynamically using a JSON file.
-Version: 1.6
+Version: 2.9
 Author: David Mroz
 */
 
@@ -26,15 +26,12 @@ function display_car_deals_section($atts)
                 echo '<div class="container">';
             }
 
-            // Layout HTML code
-            ?>
-            <div class="component">
-                <div class="header"><?php echo esc_html($deal['title']); ?></div>
+?>
+            <div class="component" style="font-family: Arial, sans-serif; font-size: 16px">
+                <div class="header" style="font-size: clamp(1.2rem, 5.5vw, 2rem)"><?php echo esc_html($deal['title']); ?></div>
                 <div class="sub-header">
                     <div class="horz-text">
-                        <p>Available APR</p>
-                        <h3 style="font-weight: 700;"><?php echo esc_html($deal['apr']); ?>%</h3>
-                        <p>for 72 mos</p>
+                        <p style="font-size: clamp(0.8rem, 1.5vw, 1rem); font-weight: 500;">Available APR <span style="font-weight: 700; font-size: clamp(0.9rem, 2vw, 1.2rem);"><?php echo esc_html($deal['apr']); ?>%</span> for 72 mos</p>
                     </div>
                 </div>
 
@@ -47,8 +44,8 @@ function display_car_deals_section($atts)
                             <div class="icon-container">
                                 <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/phone-call-white-icon.png'; ?>" alt="Image" />
                             </div>
-                            <div class="phone-number">
-                                <h1>(847)-362-5099</h1>
+                            <div class="phone-number" style="font-size: 16px;">
+                                <h2 style="font-size: clamp(1.3em, 2vw, 1.5em); font-weight: bold;">(847)-362-5099</h2>
                             </div>
                         </div>
                     </div>
@@ -57,60 +54,66 @@ function display_car_deals_section($atts)
                         <div class="grid">
                             <?php foreach ($deal['details'] as $detail) : ?>
                                 <div class="special-info">
-                                    <h2 style=""><?php echo esc_html($detail['label']); ?></h2>
-                                    <div class="horz-text">
-                                        <p style="font-size:large; margin: 0; font-weight: 700; font-family: Arial, sans-serif;">$</p>
-                                        <h1 style="font-weight:700;"><?php echo esc_html($detail['price']); ?></h1>
+                                    <h2 style="font-weight:700; font-size: 22px;"><?php echo esc_html($detail['label']); ?></h2>
+                                    <div class="horz-text" style="font-size: 16px;">
+                                        <p style="font-size: clamp(0.7em, 0.8vw, 1.2em); margin: 0; font-weight: 700; font-family: Arial, sans-serif;">$</p>
+                                        <h2 style="font-weight:700; font-size: clamp(1.6em, 4vw, 2.4em);"><?php echo esc_html($detail['price']); ?></h2>
                                         <?php if (!empty($detail['term'])) : ?>
-                                            <h3>/mo</h3>
+                                            <h3 style="font-size: clamp(0.9em, 2vw, 1.6em);">/mo</h3>
                                         <?php endif; ?>
                                     </div>
                                     <?php if (!empty($detail['term'])) : ?>
-                                        <p><?php echo esc_html($detail['term']); ?></p>
+                                        <p style="font-weight:700; font-size: clamp(0.7em, 0.8vw, 1.2em);"><?php echo esc_html($detail['term']); ?></p>
                                     <?php endif; ?>
                                 </div>
                             <?php endforeach; ?>
                         </div>
 
-                        <div class="grid-container">
+                        <div class="grid-container" style="justify-content: center;">
                             <div class="buttons">
-                                <button class="big-button">
-                                    <div class="horz-text">
-                                        <div class="icon-container-button">
-                                            <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/price-tag.png'; ?>" alt="Image" />
+                                <a style="text-decoration: none;" class="buttons" href="https://www.drivelibertycdjr.com/contact-us/">
+                                    <button class="big-button">
+                                        <div class="horz-text" style="font-size: 22px; font-weight: 500px;">
+                                            <div class="icon-container-button">
+                                                <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/price-tag.png'; ?>" alt="Image" />
+                                            </div>
+                                            Check Availability
                                         </div>
-                                        Check Availability
-                                    </div>
-                                </button>
+                                    </button>
+                                </a>
                                 <div class="small-buttons">
-                                    <button>
-                                        <div class="horz-text">
-                                            <div class="icon-container-button">
-                                                <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/car-icon.png'; ?>" alt="Image" />
+                                    <a style="text-decoration: none;" href="<?php echo esc_url($deal['car_data']); ?>">
+                                        <button>
+                                            <div class="horz-text" style="font-size: 15px; font-weight: 500px;">
+                                                <div class="icon-container-button">
+                                                    <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/car-icon.png'; ?>" alt="Image" />
+                                                </div>
+                                                View Vehicle
                                             </div>
-                                            View Vehicle
-                                        </div>
-                                    </button>
-                                    <button>
-                                        <div class="horz-text">
-                                            <div class="icon-container-button">
-                                                <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/apply-for-finance.png'; ?>" alt="Image" />
+                                        </button>
+                                    </a>
+                                    <a style="text-decoration: none;" href="https://www.drivelibertycdjr.com/finance/apply-for-financing/">
+                                        <button>
+                                            <div class="horz-text" style="font-size: 15px; font-weight: 500px;">
+                                                <div class="icon-container-button">
+                                                    <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/apply-for-finance.png'; ?>" alt="Image" />
+                                                </div>
+                                                Apply For Financing
                                             </div>
-                                            Apply For Financing
-                                        </div>
-                                    </button>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <?php
+<?php
 
             $count++;
         }
 
-        echo '</div>'; // Close the last container
+        echo '</div>';
     } else {
         echo '<p>No car deals available at the moment.</p>';
     }
@@ -123,5 +126,7 @@ add_shortcode('car_deals', 'display_car_deals_section');
 function enqueue_car_deals_assets()
 {
     wp_enqueue_style('car-deals-style', plugin_dir_url(__FILE__) . 'assets/css/car-deals.css');
+    wp_enqueue_script('car-deals-script', plugin_dir_url(__FILE__) . 'assets/js/car-deals.js', [], false, true);
 }
-add_action('wp_enqueue_scripts', 'enqueue_car_deals_assets', 20);
+add_action('wp_enqueue_scripts', 'enqueue_car_deals_assets', 100);
+add_theme_support('align-wide');

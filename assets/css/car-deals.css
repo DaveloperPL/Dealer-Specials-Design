@@ -1,16 +1,32 @@
 /* General Styling */
+
+/* Why must wordpress use dumb padding?asd */
+* {
+  padding: 0;
+  margin: 0;
+}
+main{
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+  margin: 0;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  padding: none;
+  padding-inline: none;
+  padding-left: none;
 }
 
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 0px;
   max-width: none;
 }
 
@@ -22,8 +38,8 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 100%;
-  max-width: 750px;
-  
+  max-width: none;
+  max-width: 1000px;
 }
 
 .header {
@@ -48,7 +64,8 @@ body {
   margin-top: 0px;
   width: fit-content;
 }
-.sub-header .horz-text p{
+
+.sub-header .horz-text p {
   padding: 5px;
   padding-right: 5px;
 }
@@ -67,15 +84,13 @@ body {
 
 .icon-container {
   width: 20px;
-  /* Set a fixed width for the icon */
   height: 20px;
-  /* Set a fixed height for the icon */
   display: flex;
-  /* Center the image inside the container */
   justify-content: center;
   align-items: center;
   padding: 9px;
 }
+
 .icon-container img {
   max-width: 100%;
   background-color: black;
@@ -84,12 +99,13 @@ body {
   display: flex;
 }
 
-.icon-container-button{
+.icon-container-button {
   width: 20px;
   justify-content: center;
   align-items: center;
   padding-right: 5px;
 }
+
 .icon-container-button img {
   max-width: 100%;
   border-radius: 4px;
@@ -114,6 +130,7 @@ body {
   gap: 10px;
   height: 38px;
   width: 70%;
+  max-width: 300px;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -138,15 +155,18 @@ body {
   text-align: center;
   gap: 10px;
 }
-.phone-number h1{
+
+.phone-number h1 {
   font-size: 1.2em;
   font-weight: 700;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
   gap: 5px;
   padding: 0px;
+
 }
 
 .big-button {
@@ -158,18 +178,19 @@ body {
   font-size: 1em;
   cursor: pointer;
 }
-.big-button .horz-text{
+
+.big-button .horz-text {
   justify-content: center;
   align-items: center;
 }
-.small-buttons button .horz-text{
+
+.small-buttons button .horz-text {
   justify-content: center;
   align-items: center;
 }
-.small-buttons button .horz-text .icon-container-button{
+
+.small-buttons button .horz-text .icon-container-button {
   width: 15px;
-}
-.big-button:hover {
 }
 
 .small-buttons {
@@ -187,47 +208,41 @@ body {
   cursor: pointer;
 }
 
-.small-buttons button:hover {
-
-}
-
-.special-info{
+.special-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.horz-text{
+
+.horz-text {
   display: flex;
   align-items: center;
 }
-.horz-text h1, .horz-text p, .horz-text h3{
+
+.horz-text h1,
+.horz-text p,
+.horz-text h3 {
   margin: 0;
 }
 
-/* Disclaimer Button Styling */
 .disclaimer {
   text-align: center;
   padding: 10px;
 }
 
-.disclaimer-button {
+/* .disclaimer-button {
   background-color: #ffc107;
   color: black;
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
-}
+} */
 
-.disclaimer-button:hover {
-  background-color: #e0a800;
-}
-
-/* Responsive Design */
-@media (min-width: 1070px) {
+@media (min-width: 1760px) {
   .container {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .component {
