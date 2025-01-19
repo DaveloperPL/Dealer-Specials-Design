@@ -1,15 +1,7 @@
 /* General Styling */
 
 /* Why must wordpress use dumb padding?asd */
-* {
-  padding: 0;
-  margin: 0;
-}
-main{
-  padding-left: 10px!important;
-  padding-right: 10px!important;
-  margin: 0;
-}
+
 
 
 body {
