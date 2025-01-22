@@ -32,6 +32,11 @@ body {
   width: 100%;
   max-width: none;
   max-width: 1000px;
+  transition: box-shadow 0.3s;
+}
+
+.component:hover{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -169,6 +174,12 @@ body {
   padding: 15px 20px;
   font-size: 1em;
   cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+
+.big-button:hover{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
 .big-button .horz-text {
@@ -198,6 +209,12 @@ body {
   padding: 10px 20px;
   font-size: 0.8em;
   cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+
+.small-buttons button:hover{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 .special-info {
