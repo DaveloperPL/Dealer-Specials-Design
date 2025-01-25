@@ -7,10 +7,11 @@ Author: David Mroz
 */
 
 function display_car_deals_section($atts)
-{
+{   
+    $response = wp_remote_get('https://admin.zyvexia.net/get_data.php?api_key=b4455de6-cbc8-43bd-9de4-4fc195a4628c');
     // Open the json
     $json_file = plugin_dir_path(__FILE__) . 'assets/data/deals.json';
-    $json_data = json_decode(file_get_contents($json_file), true);
+    $json_data = json_decode(wp_remote_retrieve_body($response), true);
 
     ob_start();
 
