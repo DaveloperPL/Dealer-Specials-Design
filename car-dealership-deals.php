@@ -38,7 +38,7 @@ function display_car_deals_section($atts)
 
                 <div class="content">
                     <div class="grid-container">
-                        <div class="image-container">
+                        <div class="image-container" style="">
                             <img src="<?php echo esc_url($deal['car_image']); ?>" alt="Image" />
                         </div>
                         <div class="contact-container">
@@ -46,7 +46,7 @@ function display_car_deals_section($atts)
                                 <img src="<?php echo plugin_dir_url(__FILE__) . 'assets/images/phone-call-white-icon.png'; ?>" alt="Image" />
                             </div>
                             <div class="phone-number" style="font-size: 16px;">
-                                <h2 style="font-size: clamp(1.3em, 2vw, 1.5em); font-weight: bold;">(847)-362-5099</h2>
+                                <h2 style="font-size: 1.2em; font-weight: bold;">(847)-362-5099</h2>
                             </div>
                         </div>
                     </div>
@@ -56,15 +56,15 @@ function display_car_deals_section($atts)
                             <?php foreach ($deal['details'] as $detail) : ?>
                                 <div class="special-info">
                                     <h2 style="font-weight:700; font-size: 22px;"><?php echo esc_html($detail['label']); ?></h2>
-                                    <div class="horz-text" style="font-size: 16px;">
-                                        <p style="font-size: clamp(0.7em, 0.8vw, 1.2em); margin: 0; font-weight: 700; font-family: Arial, sans-serif;">$</p>
-                                        <h2 style="font-weight:700; font-size: clamp(1.6em, 4vw, 2.4em);"><?php echo esc_html($detail['price']); ?></h2>
+                                    <div class="horz-text" style="">
+                                        <sup style="font-size: 1.4em; margin: 0; font-weight: 700; font-family: Arial, sans-serif;">$</sup>
+                                        <h2 style="font-weight:700; font-size: 2.5em"><?php echo esc_html($detail['price']); ?></h2>
                                         <?php if (!empty($detail['term'])) : ?>
-                                            <h3 style="font-size: clamp(0.9em, 2vw, 1.6em);">/mo</h3>
+                                            <i style="font-size: 1.4em;">/mo</i>
                                         <?php endif; ?>
                                     </div>
                                     <?php if (!empty($detail['term'])) : ?>
-                                        <p style="font-weight:700; font-size: clamp(0.7em, 0.8vw, 1.2em);"><?php echo esc_html($detail['term']); ?></p>
+                                        <p style="font-weight:700; font-size: 0.8em;"><?php echo esc_html($detail['term']); ?></p>
                                     <?php endif; ?>
                                 </div>
                             <?php endforeach; ?>
