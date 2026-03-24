@@ -1,4 +1,5 @@
 Dealer Specials Plugin
+
 WordPress plugin that renders a car dealership specials grid from JSON (originally loaded from a remote admin API). This repo is kept as a design and implementation archive. The original live site and backing database are no longer available, so the remote data source in the code may not work.
 
 What it is:
